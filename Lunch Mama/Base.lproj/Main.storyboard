@@ -71,6 +71,7 @@
                                 <state key="normal" title="登入"/>
                                 <connections>
                                     <action selector="loginSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBL-Nj-JL3"/>
+                                    <action selector="loginSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4k-J7-d1z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +109,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.5" y="132.421875"/>
+            <point key="canvasLocation" x="-595" y="-369"/>
+        </scene>
+        <!--關於我們-->
+        <scene sceneID="tri-1x-IsN">
+            <objects>
+                <viewController id="2WY-Lk-5ZW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1O2-Hl-j8M">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="關於我們" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV2-Ab-49g">
+                                <rect key="frame" x="20" y="20" width="142" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nLn-uq-PgX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="關於我們" id="esS-8E-HNa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYB-nJ-AfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="689"/>
+        </scene>
+        <!--最新消息-->
+        <scene sceneID="gz9-eA-RHN">
+            <objects>
+                <viewController id="cO2-gq-2te" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2E-0L-R3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最新消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-uW-Iv2">
+                                <rect key="frame" x="20" y="20" width="142" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="q4H-go-USd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="最新消息" id="S5p-WM-ibP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKu-Pt-r3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.4375" y="47.4609375"/>
+        </scene>
+        <!--tabBarController-->
+        <scene sceneID="8lf-Vn-rn5">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" title="tabBarController" id="fvt-x6-B43" customClass="tabBarViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yx6-Z5-BBK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cO2-gq-2te" kind="relationship" relationship="viewControllers" id="Rpp-6A-bST"/>
+                        <segue destination="2WY-Lk-5ZW" kind="relationship" relationship="viewControllers" id="k3t-Ij-68d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1z-gJ-0Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-595" y="368"/>
         </scene>
     </scenes>
     <resources>
