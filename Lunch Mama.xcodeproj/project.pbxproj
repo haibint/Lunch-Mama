@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EE464224E2520006E03FD /* latestNewsViewController.swift */; };
 		73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D59A2C224D1871002CCBCC /* AppDelegate.swift */; };
 		73D59A2F224D1871002CCBCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D59A2E224D1871002CCBCC /* ViewController.swift */; };
 		73D59A32224D1871002CCBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D59A30224D1871002CCBCC /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738EE464224E2520006E03FD /* latestNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latestNewsViewController.swift; sourceTree = "<group>"; };
 		73D59A29224D1871002CCBCC /* Lunch Mama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Mama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D59A2C224D1871002CCBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D59A2E224D1871002CCBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				73D59A35224D1872002CCBCC /* LaunchScreen.storyboard */,
 				73D59A38224D1872002CCBCC /* Info.plist */,
 				73D59A40224D3C5C002CCBCC /* tabBarViewController.swift */,
+				738EE464224E2520006E03FD /* latestNewsViewController.swift */,
 			);
 			path = "Lunch Mama";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				73D59A41224D3C5C002CCBCC /* tabBarViewController.swift in Sources */,
 				73D59A2F224D1871002CCBCC /* ViewController.swift in Sources */,
+				738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */,
 				73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

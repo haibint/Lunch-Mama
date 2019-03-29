@@ -13,11 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginID: UITextField!
     @IBOutlet weak var loginPW: UITextField!
-    //resign first responder while submit
-    @IBAction func loginSubmit(_ sender: UIButton) {
-        self.loginID.resignFirstResponder()
-        self.loginPW.resignFirstResponder()
-    }
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -49,12 +45,15 @@ class ViewController: UIViewController {
     }
     //submir login info
     @IBAction func loginSubmitted(_ sender: UIButton) {
+        //resign first responder while submit
+        self.loginID.resignFirstResponder()
+        self.loginPW.resignFirstResponder()
+        
         if loginVerify(id: loginID.text, pw: loginPW.text) {
             //change tab bar view as root view controller after successful login
-            let tabBarView  = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-            appDelegate.window?.rootViewController = tabBarView
+            let tabBarViewController  = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+            appDelegate.window?.rootViewController = tabBarViewController
         } else {
             loginID.text = ""
             loginPW.text = ""

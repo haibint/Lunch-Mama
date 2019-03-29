@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,7 +71,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="登入"/>
                                 <connections>
-                                    <action selector="loginSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HBL-Nj-JL3"/>
                                     <action selector="loginSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4k-J7-d1z"/>
                                 </connections>
                             </button>
@@ -78,26 +78,26 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aIM-zG-Q8y" firstAttribute="top" secondItem="ICi-Ih-ZdX" secondAttribute="bottom" constant="28" id="17K-2c-efY"/>
+                            <constraint firstItem="roI-3O-gxc" firstAttribute="trailing" secondItem="I1H-mf-xKp" secondAttribute="trailing" id="3Gi-ND-K9a"/>
                             <constraint firstItem="IGj-1o-XZw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="225" id="5Th-uq-p0l"/>
-                            <constraint firstItem="roI-3O-gxc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="FDd-Jd-oEL"/>
+                            <constraint firstItem="roI-3O-gxc" firstAttribute="leading" secondItem="ICi-Ih-ZdX" secondAttribute="leading" id="A2r-aT-BHe"/>
+                            <constraint firstItem="roI-3O-gxc" firstAttribute="centerX" secondItem="pGN-B1-skh" secondAttribute="centerX" id="Dih-eP-s3T"/>
                             <constraint firstItem="I1H-mf-xKp" firstAttribute="top" secondItem="3zc-Hj-c9t" secondAttribute="bottom" constant="30" id="Mqd-2V-EKT"/>
                             <constraint firstItem="I1H-mf-xKp" firstAttribute="centerY" secondItem="ICi-Ih-ZdX" secondAttribute="centerY" id="Uve-I0-psF"/>
-                            <constraint firstItem="IGj-1o-XZw" firstAttribute="centerX" secondItem="roI-3O-gxc" secondAttribute="centerX" id="Vd3-xr-xpB"/>
                             <constraint firstItem="Tsf-xl-8D2" firstAttribute="leading" secondItem="aIM-zG-Q8y" secondAttribute="trailing" constant="8" symbolic="YES" id="XXA-ai-IvF"/>
                             <constraint firstItem="IGj-1o-XZw" firstAttribute="top" secondItem="pGN-B1-skh" secondAttribute="bottom" constant="60" id="egL-uX-T6E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1H-mf-xKp" secondAttribute="trailing" constant="182" id="fgu-Jp-YEI"/>
-                            <constraint firstItem="aIM-zG-Q8y" firstAttribute="leading" secondItem="roI-3O-gxc" secondAttribute="leading" id="jUf-IF-92P"/>
+                            <constraint firstItem="roI-3O-gxc" firstAttribute="centerX" secondItem="3zc-Hj-c9t" secondAttribute="centerX" id="hhO-vE-uUB"/>
                             <constraint firstItem="Tsf-xl-8D2" firstAttribute="leading" secondItem="I1H-mf-xKp" secondAttribute="leading" id="l1d-eE-vPM"/>
                             <constraint firstItem="IGj-1o-XZw" firstAttribute="centerX" secondItem="pGN-B1-skh" secondAttribute="centerX" id="nxp-CN-ZDY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IGj-1o-XZw" secondAttribute="bottom" constant="312" id="qZK-TH-3Rg"/>
                             <constraint firstItem="ICi-Ih-ZdX" firstAttribute="leading" secondItem="aIM-zG-Q8y" secondAttribute="leading" id="qvi-j2-7oo"/>
+                            <constraint firstItem="roI-3O-gxc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="rfH-2g-xVm"/>
                             <constraint firstItem="ICi-Ih-ZdX" firstAttribute="trailing" secondItem="aIM-zG-Q8y" secondAttribute="trailing" id="tCJ-Jp-B0s"/>
                             <constraint firstItem="aIM-zG-Q8y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="tDZ-EZ-o2C"/>
-                            <constraint firstItem="I1H-mf-xKp" firstAttribute="trailing" secondItem="roI-3O-gxc" secondAttribute="trailing" id="tZ6-de-Q0q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aIM-zG-Q8y" secondAttribute="bottom" constant="620" id="wiw-CN-ywr"/>
                             <constraint firstItem="Tsf-xl-8D2" firstAttribute="centerY" secondItem="aIM-zG-Q8y" secondAttribute="centerY" id="xXo-K0-HcY"/>
                             <constraint firstItem="Tsf-xl-8D2" firstAttribute="trailing" secondItem="I1H-mf-xKp" secondAttribute="trailing" id="z96-Gh-3ET"/>
-                            <constraint firstItem="3zc-Hj-c9t" firstAttribute="centerX" secondItem="roI-3O-gxc" secondAttribute="centerX" id="zdH-fS-9ha"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -119,15 +119,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="關於我們" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV2-Ab-49g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="關於我們" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV2-Ab-49g">
                                 <rect key="frame" x="20" y="20" width="142" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cV2-Ab-49g" firstAttribute="leading" secondItem="1O2-Hl-j8M" secondAttribute="leadingMargin" id="aCQ-I3-MGi"/>
+                            <constraint firstItem="cV2-Ab-49g" firstAttribute="top" secondItem="nLn-uq-PgX" secondAttribute="top" id="rLC-Vw-d0p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nLn-uq-PgX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="關於我們" id="esS-8E-HNa"/>
@@ -139,20 +142,34 @@
         <!--最新消息-->
         <scene sceneID="gz9-eA-RHN">
             <objects>
-                <viewController id="cO2-gq-2te" sceneMemberID="viewController">
+                <viewController id="cO2-gq-2te" customClass="latestNewsViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2E-0L-R3Y">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最新消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-uW-Iv2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-uW-Iv2">
                                 <rect key="frame" x="20" y="20" width="142" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="we3-xH-ouD">
+                                <rect key="frame" x="20" y="70" width="728" height="905"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cO2-gq-2te" id="FnM-lO-hhR"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dEr-uW-Iv2" firstAttribute="leading" secondItem="we3-xH-ouD" secondAttribute="leading" id="0ZE-A5-zyA"/>
+                            <constraint firstItem="we3-xH-ouD" firstAttribute="trailing" secondItem="e2E-0L-R3Y" secondAttribute="trailingMargin" id="2hD-pB-ngS"/>
+                            <constraint firstItem="dEr-uW-Iv2" firstAttribute="top" secondItem="q4H-go-USd" secondAttribute="top" id="3PJ-Ys-9pa"/>
+                            <constraint firstItem="we3-xH-ouD" firstAttribute="leading" secondItem="e2E-0L-R3Y" secondAttribute="leadingMargin" id="Jjf-Nk-Mgl"/>
+                            <constraint firstItem="we3-xH-ouD" firstAttribute="top" secondItem="dEr-uW-Iv2" secondAttribute="bottom" constant="8" symbolic="YES" id="MfP-ET-DvT"/>
+                            <constraint firstItem="we3-xH-ouD" firstAttribute="bottom" secondItem="q4H-go-USd" secondAttribute="bottom" id="bRy-Od-USU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="q4H-go-USd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="最新消息" id="S5p-WM-ibP"/>
@@ -164,7 +181,7 @@
         <!--tabBarController-->
         <scene sceneID="8lf-Vn-rn5">
             <objects>
-                <tabBarController storyboardIdentifier="tabBar" title="tabBarController" id="fvt-x6-B43" customClass="tabBarViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" title="tabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fvt-x6-B43" customClass="tabBarViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yx6-Z5-BBK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
