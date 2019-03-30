@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -36,10 +37,17 @@ class ViewController: UIViewController {
         }
     }
     
-    func loginVerify (id: String?, pw: String?)->Bool{
+    func showMessagePrompt(msg: String!){
+            print(msg)
+    }
+    
+    func loginVerify (id: String!, pw: String!)->Bool {
         var success = false
-        if id == "admin" && pw == "123" {
-            success = true
+        Auth.auth().signIn(withEmail: id, password: pw) { [weak self] user, error in
+            if error == nil {
+                success = true
+            }
+            guard let strongSelf = self else { return }
         }
         return success
     }
@@ -49,7 +57,12 @@ class ViewController: UIViewController {
         self.loginID.resignFirstResponder()
         self.loginPW.resignFirstResponder()
         
-        if loginVerify(id: loginID.text, pw: loginPW.text) {
+        guard let email = self.loginID.text, let password = self.loginPW.text else {
+            self.showMessagePrompt(msg: "郵箱或帳號不能為空")
+            return
+        }
+        
+        if loginVerify(id: email, pw: password) {
             //change tab bar view as root view controller after successful login
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let tabBarViewController  = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
@@ -63,6 +76,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    var authHandle: AuthStateDidChangeListenerHandle?
+    override func viewWillAppear(_ animated: Bool) {
+        authHandle = Auth.auth().addStateDidChangeListener {(auth, user) in
+            //
+            let user = Auth.auth().currentUser
+            if let user = user {
+                let uid = user.uid
+                let email = user.email
+                // ...
+                print(uid)
+            }
+        }
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(authHandle!)
     }
 
     override func didReceiveMemoryWarning() {
