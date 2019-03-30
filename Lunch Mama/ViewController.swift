@@ -15,6 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginID: UITextField!
     @IBOutlet weak var loginPW: UITextField!
 
+    @IBOutlet weak var accountLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    
+    @IBOutlet weak var signUpSubmitButton: UIButton!
+    var isSigningUp = false
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -37,39 +43,62 @@ class ViewController: UIViewController {
         }
     }
     
-    func showMessagePrompt(msg: String!){
-            print(msg)
+    func loginSignupSwitchTo(status:String!){
+        switch status {
+        case "login":
+            self.accountLabel.text = "登入戶口"
+            self.passwordLabel.text = "密碼"
+            self.isSigningUp = false
+            self.signUpSubmitButton.isHidden = true
+            self.signUpSubmitButton.isEnabled = false
+            break
+        case "signup":
+            self.accountLabel.text = "輸入電郵"
+            self.passwordLabel.text = "輸入密碼"
+            self.isSigningUp = true
+            self.signUpSubmitButton.isHidden = false
+            self.signUpSubmitButton.isEnabled = true
+            break
+        default:
+            break
+        }
     }
     
-    func loginVerify (id: String!, pw: String!)->Bool {
-        var success = false
-        Auth.auth().signIn(withEmail: id, password: pw) { [weak self] user, error in
-            if error == nil {
-                success = true
-            }
-            guard let strongSelf = self else { return }
-        }
-        return success
+    @IBAction func signUpPressed(_ sender: Any) {
+        if isSigningUp {return} else {loginSignupSwitchTo(status: "signup")}
     }
-    //submir login info
+    
+    @IBAction func signUpSubmit(_ sender: Any) {
+        guard let email = self.loginID.text, let password = self.loginPW.text else {return}
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if authResult?.user != nil {
+                //switch back to login after successful signup
+                self.loginSignupSwitchTo(status: "login")
+                self.loginID?.text = authResult?.user.email
+            }
+        }
+    }
+    
+    //submib login info
     @IBAction func loginSubmitted(_ sender: UIButton) {
+        //switch back to login view
+        if isSigningUp {
+            loginSignupSwitchTo(status: "login")
+            return
+        }
         //resign first responder while submit
         self.loginID.resignFirstResponder()
         self.loginPW.resignFirstResponder()
         
-        guard let email = self.loginID.text, let password = self.loginPW.text else {
-            self.showMessagePrompt(msg: "郵箱或帳號不能為空")
-            return
-        }
+        //login verfity
+        guard let email = self.loginID.text, let password = self.loginPW.text else {return}
         
-        if loginVerify(id: email, pw: password) {
-            //change tab bar view as root view controller after successful login
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let tabBarViewController  = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
-            appDelegate.window?.rootViewController = tabBarViewController
-        } else {
-            loginID.text = ""
-            loginPW.text = ""
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
+            guard let strongSelf = self else { return }
+            if user == nil {
+                strongSelf.loginID?.text = ""
+                strongSelf.loginPW?.text = ""
+            }
         }
     }
     
@@ -82,11 +111,11 @@ class ViewController: UIViewController {
         authHandle = Auth.auth().addStateDidChangeListener {(auth, user) in
             //
             let user = Auth.auth().currentUser
-            if let user = user {
-                let uid = user.uid
-                let email = user.email
-                // ...
-                print(uid)
+            if user != nil {
+                //change tab bar view as root view controller after successful login
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let tabBarViewController  = self.storyboard?.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+                appDelegate.window?.rootViewController = tabBarViewController
             }
         }
     }

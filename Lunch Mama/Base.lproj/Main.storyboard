@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,8 +56,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGN-B1-skh">
-                                <rect key="frame" x="333" y="441" width="102" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="343" y="472" width="82" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="忘記密碼"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginpic" translatesAutoresizingMaskIntoConstraints="NO" id="IGj-1o-XZw">
@@ -67,11 +67,27 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zc-Hj-c9t">
-                                <rect key="frame" x="358" y="233" width="53" height="44"/>
+                                <rect key="frame" x="312" y="231" width="53" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="登入"/>
                                 <connections>
                                     <action selector="loginSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4k-J7-d1z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDk-eJ-NV1">
+                                <rect key="frame" x="399" y="231" width="53" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="註冊"/>
+                                <connections>
+                                    <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ln3-AY-SW7"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGX-QI-0oX">
+                                <rect key="frame" x="343.5" y="409" width="82" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="提交註冊"/>
+                                <connections>
+                                    <action selector="signUpSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWh-RB-dtc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,12 +98,18 @@
                             <constraint firstItem="IGj-1o-XZw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="225" id="5Th-uq-p0l"/>
                             <constraint firstItem="roI-3O-gxc" firstAttribute="leading" secondItem="ICi-Ih-ZdX" secondAttribute="leading" id="A2r-aT-BHe"/>
                             <constraint firstItem="roI-3O-gxc" firstAttribute="centerX" secondItem="pGN-B1-skh" secondAttribute="centerX" id="Dih-eP-s3T"/>
-                            <constraint firstItem="I1H-mf-xKp" firstAttribute="top" secondItem="3zc-Hj-c9t" secondAttribute="bottom" constant="30" id="Mqd-2V-EKT"/>
+                            <constraint firstItem="pDk-eJ-NV1" firstAttribute="leading" secondItem="3zc-Hj-c9t" secondAttribute="trailing" constant="34" id="FBY-XY-He4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pDk-eJ-NV1" secondAttribute="trailing" constant="316" id="J0h-Ry-ft6"/>
+                            <constraint firstItem="I1H-mf-xKp" firstAttribute="top" secondItem="3zc-Hj-c9t" secondAttribute="bottom" constant="32" id="Mqd-2V-EKT"/>
+                            <constraint firstItem="pDk-eJ-NV1" firstAttribute="baseline" secondItem="3zc-Hj-c9t" secondAttribute="baseline" id="RX9-o3-qgd"/>
+                            <constraint firstItem="GGX-QI-0oX" firstAttribute="centerX" secondItem="pGN-B1-skh" secondAttribute="centerX" id="RrE-0E-rhL"/>
+                            <constraint firstItem="GGX-QI-0oX" firstAttribute="top" secondItem="Tsf-xl-8D2" secondAttribute="bottom" constant="8" symbolic="YES" id="UUt-yK-w9E"/>
                             <constraint firstItem="I1H-mf-xKp" firstAttribute="centerY" secondItem="ICi-Ih-ZdX" secondAttribute="centerY" id="Uve-I0-psF"/>
                             <constraint firstItem="Tsf-xl-8D2" firstAttribute="leading" secondItem="aIM-zG-Q8y" secondAttribute="trailing" constant="8" symbolic="YES" id="XXA-ai-IvF"/>
-                            <constraint firstItem="IGj-1o-XZw" firstAttribute="top" secondItem="pGN-B1-skh" secondAttribute="bottom" constant="60" id="egL-uX-T6E"/>
+                            <constraint firstItem="IGj-1o-XZw" firstAttribute="top" secondItem="pGN-B1-skh" secondAttribute="bottom" constant="35" id="egL-uX-T6E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1H-mf-xKp" secondAttribute="trailing" constant="182" id="fgu-Jp-YEI"/>
-                            <constraint firstItem="roI-3O-gxc" firstAttribute="centerX" secondItem="3zc-Hj-c9t" secondAttribute="centerX" id="hhO-vE-uUB"/>
+                            <constraint firstItem="roI-3O-gxc" firstAttribute="centerX" secondItem="3zc-Hj-c9t" secondAttribute="centerX" constant="45.5" id="hhO-vE-uUB"/>
+                            <constraint firstItem="I1H-mf-xKp" firstAttribute="top" secondItem="pDk-eJ-NV1" secondAttribute="bottom" constant="32" id="kEZ-nB-wFm"/>
                             <constraint firstItem="Tsf-xl-8D2" firstAttribute="leading" secondItem="I1H-mf-xKp" secondAttribute="leading" id="l1d-eE-vPM"/>
                             <constraint firstItem="IGj-1o-XZw" firstAttribute="centerX" secondItem="pGN-B1-skh" secondAttribute="centerX" id="nxp-CN-ZDY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IGj-1o-XZw" secondAttribute="bottom" constant="312" id="qZK-TH-3Rg"/>
@@ -102,14 +124,45 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="accountLabel" destination="ICi-Ih-ZdX" id="Kzc-tZ-SMw"/>
                         <outlet property="currentLoginRoleIcon" destination="IGj-1o-XZw" id="e2G-W9-7N3"/>
                         <outlet property="loginID" destination="I1H-mf-xKp" id="fkz-Om-FJK"/>
                         <outlet property="loginPW" destination="Tsf-xl-8D2" id="n3K-wQ-r5o"/>
+                        <outlet property="passwordLabel" destination="aIM-zG-Q8y" id="P1k-WW-WDJ"/>
+                        <outlet property="signUpSubmitButton" destination="GGX-QI-0oX" id="8ea-DI-z8c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-595" y="-369"/>
+        </scene>
+        <!--帳戶-->
+        <scene sceneID="5uG-1X-hev">
+            <objects>
+                <viewController id="qon-Hf-hkr" customClass="profileViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c2a-Xk-3lR">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSb-WJ-y0Z">
+                                <rect key="frame" x="358" y="491" width="53" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="登出"/>
+                                <connections>
+                                    <action selector="signOutPressed:" destination="qon-Hf-hkr" eventType="touchUpInside" id="B5X-Ua-hdl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="089-8d-O5Q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="帳戶" id="GpT-Vi-StY"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twi-a2-AaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-595" y="1084"/>
         </scene>
         <!--關於我們-->
         <scene sceneID="tri-1x-IsN">
@@ -190,6 +243,7 @@
                     <connections>
                         <segue destination="cO2-gq-2te" kind="relationship" relationship="viewControllers" id="Rpp-6A-bST"/>
                         <segue destination="2WY-Lk-5ZW" kind="relationship" relationship="viewControllers" id="k3t-Ij-68d"/>
+                        <segue destination="qon-Hf-hkr" kind="relationship" relationship="viewControllers" id="nB0-wE-JNe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1z-gJ-0Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>

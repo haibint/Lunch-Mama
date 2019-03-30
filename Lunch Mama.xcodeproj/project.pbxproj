@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7328DC8D224FA6BF000D31EF /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7328DC8C224FA6BF000D31EF /* profileViewController.swift */; };
 		73837F04224E6CF400D19082 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 73837F03224E6CF400D19082 /* .gitignore */; };
 		738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EE464224E2520006E03FD /* latestNewsViewController.swift */; };
 		738EE467224E30C8006E03FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 738EE466224E30C8006E03FD /* GoogleService-Info.plist */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7328DC8C224FA6BF000D31EF /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		73837F03224E6CF400D19082 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		738EE464224E2520006E03FD /* latestNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latestNewsViewController.swift; sourceTree = "<group>"; };
 		738EE466224E30C8006E03FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				738EE466224E30C8006E03FD /* GoogleService-Info.plist */,
 				73D59A40224D3C5C002CCBCC /* tabBarViewController.swift */,
 				738EE464224E2520006E03FD /* latestNewsViewController.swift */,
+				7328DC8C224FA6BF000D31EF /* profileViewController.swift */,
 			);
 			path = "Lunch Mama";
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				73D59A41224D3C5C002CCBCC /* tabBarViewController.swift in Sources */,
 				73D59A2F224D1871002CCBCC /* ViewController.swift in Sources */,
 				738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */,
+				7328DC8D224FA6BF000D31EF /* profileViewController.swift in Sources */,
 				73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
