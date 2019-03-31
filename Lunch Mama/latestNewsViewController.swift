@@ -7,29 +7,59 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseFirestore
+struct News {
+    var date:Timestamp?
+    var author:String?
+    var title:String?
+    var lead:String?
+    var content:String?
+}
 
 class latestNewsViewController: UIViewController, UITableViewDataSource {
-    var dummy_data = ["news1", "news2"]
+    var db: Firestore!
+    var numberOfNewsRows: Int = 0
+    var newsArray = [News]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //[start setup]
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        //[end setup]
+        db = Firestore.firestore()
+    }
+    
+    private func getCollection() {
+        //get the latest five entries in news
+        db.collection("news").order(by: "date", descending:true).limit(to: 5)
+            .getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let news = News(date: document.data()["date"] as! Timestamp?, author: document.data()["author"] as! String?, title: document.data()["title"] as! String?, lead: document.data()["lead"] as! String?, content: document.data()["content"] as! String?)
+                    self.newsArray.append(news)
+                }
+                self.numberOfNewsRows = self.newsArray.count
+            }
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummy_data.count
+        return self.numberOfNewsRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = dummy_data[indexPath.row]
+        cell.textLabel?.text = newsArray[indexPath.row].title
         return cell
-    }
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
