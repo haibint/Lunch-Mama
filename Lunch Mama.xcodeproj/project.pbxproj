@@ -89,9 +89,9 @@
 		738EE47F224E5C41006E03FD /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		738EE488224E5C8A006E03FD /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
 		738EE489224E5C8A006E03FD /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
-		738EE48D224E5F42006E03FD /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		738EE48E224E654F006E03FD /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		73D12541225120ED00D8D732 /* gRPCCertificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gRPCCertificates.bundle; sourceTree = "<group>"; };
+		73D125432251254800D8D732 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		73D125442251255600D8D732 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		73D59A29224D1871002CCBCC /* Lunch Mama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Mama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D59A2C224D1871002CCBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D59A2E224D1871002CCBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +148,8 @@
 		73837F05224E6E5500D19082 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73D125442251255600D8D732 /* module.modulemap */,
+				73D125432251254800D8D732 /* Firebase.h */,
 				73D12541225120ED00D8D732 /* gRPCCertificates.bundle */,
 				738590F422509E220013E0F0 /* BoringSSL-GRPC.framework */,
 				34798ED62250CAB6003A8510 /* BoringSSL-GRPC.framework */,
@@ -181,8 +183,6 @@
 				738EE478224E5C3F006E03FD /* nanopb.framework */,
 				738EE488224E5C8A006E03FD /* FirebaseAuth.framework */,
 				738EE489224E5C8A006E03FD /* GTMSessionFetcher.framework */,
-				738EE48D224E5F42006E03FD /* module.modulemap */,
-				738EE48E224E654F006E03FD /* Firebase.h */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
