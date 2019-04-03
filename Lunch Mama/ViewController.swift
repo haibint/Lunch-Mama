@@ -8,9 +8,10 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 class ViewController: UIViewController {
-    
+    var db: Firestore!
     
     @IBOutlet weak var loginID: UITextField!
     @IBOutlet weak var loginPW: UITextField!
@@ -75,6 +76,19 @@ class ViewController: UIViewController {
                 //switch back to login after successful signup
                 self.loginSignupSwitchTo(status: "login")
                 self.loginID?.text = authResult?.user.email
+                self.loginPW?.text = ""
+                // add newly signup users into the database
+                self.db.collection("user_infos").document(authResult!.user.uid).setData([
+                    "name": authResult!.user.email!,
+                    "email": authResult!.user.email!
+                    //...
+                ]){ err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document successfully written!")
+                    }
+                }
             }
         }
     }
@@ -105,6 +119,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let settings = FirestoreSettings()
+        Firestore.firestore().settings = settings
+        
+        db = Firestore.firestore()
     }
     var authHandle: AuthStateDidChangeListenerHandle?
     override func viewWillAppear(_ animated: Bool) {

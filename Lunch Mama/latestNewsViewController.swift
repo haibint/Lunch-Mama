@@ -28,7 +28,7 @@ class latestNewsViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         let settings = FirestoreSettings()
         Firestore.firestore().settings = settings
-        //[end setup]
+        
         db = Firestore.firestore()
         getCollection()
         
