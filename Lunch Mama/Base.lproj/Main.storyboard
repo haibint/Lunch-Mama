@@ -152,16 +152,26 @@
                                     <action selector="signOutPressed:" destination="qon-Hf-hkr" eventType="touchUpInside" id="B5X-Ua-hdl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2f-yj-TAI">
+                                <rect key="frame" x="37" y="55" width="164" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="089-8d-O5Q"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="帳戶" id="GpT-Vi-StY"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="user_name_label" destination="H2f-yj-TAI" id="biv-V4-fvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twi-a2-AaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-595" y="1084"/>
+            <point key="canvasLocation" x="-595.3125" y="1083.984375"/>
         </scene>
         <!--關於我們-->
         <scene sceneID="tri-1x-IsN">
