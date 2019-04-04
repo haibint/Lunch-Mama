@@ -8,9 +8,11 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
 
-class LunchViewController: UICollectionViewController {
+final class LunchViewController: UICollectionViewController {
+    
+    private let reuseIdentifier = "StudentCell"
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()

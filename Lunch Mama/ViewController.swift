@@ -5,7 +5,6 @@
 //  Created by 湯銳彬 on 28/3/2019.
 //  Copyright © 2019 binaryyard. All rights reserved.
 //
-
 import UIKit
 import Firebase
 
@@ -14,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var loginID: UITextField!
     @IBOutlet weak var loginPW: UITextField!
-
+    
     @IBOutlet weak var accountLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     
@@ -122,12 +121,11 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(authHandle!)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-

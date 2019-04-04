@@ -23,6 +23,8 @@
 		34798EDE2250CAB7003A8510 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED82250CAB7003A8510 /* leveldb-library.framework */; };
 		34798EE42250CE8C003A8510 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EE32250CE8C003A8510 /* FIRAnalyticsConnector.framework */; };
 		34798EE62250CEA1003A8510 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EE52250CEA1003A8510 /* FirebaseCoreDiagnostics.framework */; };
+		34798EEC2253A6ED003A8510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34798EEB2253A6ED003A8510 /* ViewController.swift */; };
+		34798EF02253ACCE003A8510 /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34798EEF2253ACCE003A8510 /* LunchViewController.swift */; };
 		7328DC8D224FA6BF000D31EF /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7328DC8C224FA6BF000D31EF /* profileViewController.swift */; };
 		73837F04224E6CF400D19082 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 73837F03224E6CF400D19082 /* .gitignore */; };
 		738590F922509E240013E0F0 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F222509E220013E0F0 /* gRPC-C++.framework */; };
@@ -45,7 +47,6 @@
 		738EE48B224E5C8A006E03FD /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE489224E5C8A006E03FD /* GTMSessionFetcher.framework */; };
 		73D12542225120ED00D8D732 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73D12541225120ED00D8D732 /* gRPCCertificates.bundle */; };
 		73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D59A2C224D1871002CCBCC /* AppDelegate.swift */; };
-		73D59A2F224D1871002CCBCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D59A2E224D1871002CCBCC /* ViewController.swift */; };
 		73D59A32224D1871002CCBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D59A30224D1871002CCBCC /* Main.storyboard */; };
 		73D59A34224D1872002CCBCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D59A33224D1872002CCBCC /* Assets.xcassets */; };
 		73D59A37224D1872002CCBCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D59A35224D1872002CCBCC /* LaunchScreen.storyboard */; };
@@ -71,6 +72,8 @@
 		34798EE52250CEA1003A8510 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
 		34798EE922531A45003A8510 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
 		34798EEA22531A56003A8510 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		34798EEB2253A6ED003A8510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34798EEF2253ACCE003A8510 /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
 		7328DC8C224FA6BF000D31EF /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		73837F03224E6CF400D19082 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		738590F222509E220013E0F0 /* gRPC-C++.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "gRPC-C++.framework"; sourceTree = "<group>"; };
@@ -94,7 +97,6 @@
 		73D12541225120ED00D8D732 /* gRPCCertificates.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = gRPCCertificates.bundle; sourceTree = "<group>"; };
 		73D59A29224D1871002CCBCC /* Lunch Mama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch Mama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D59A2C224D1871002CCBCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73D59A2E224D1871002CCBCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73D59A31224D1871002CCBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73D59A33224D1872002CCBCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73D59A36224D1872002CCBCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -209,8 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				73D59A2C224D1871002CCBCC /* AppDelegate.swift */,
-				73D59A2E224D1871002CCBCC /* ViewController.swift */,
 				73D59A30224D1871002CCBCC /* Main.storyboard */,
+				34798EEF2253ACCE003A8510 /* LunchViewController.swift */,
+				34798EEB2253A6ED003A8510 /* ViewController.swift */,
 				73D59A33224D1872002CCBCC /* Assets.xcassets */,
 				73D59A35224D1872002CCBCC /* LaunchScreen.storyboard */,
 				73D59A38224D1872002CCBCC /* Info.plist */,
@@ -296,9 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34798EEC2253A6ED003A8510 /* ViewController.swift in Sources */,
 				73D59A41224D3C5C002CCBCC /* tabBarViewController.swift in Sources */,
-				73D59A2F224D1871002CCBCC /* ViewController.swift in Sources */,
 				738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */,
+				34798EF02253ACCE003A8510 /* LunchViewController.swift in Sources */,
 				7328DC8D224FA6BF000D31EF /* profileViewController.swift in Sources */,
 				73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */,
 			);
