@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345EAAAE226472EA00ED4259 /* LunchCellPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345EAAAC226472EA00ED4259 /* LunchCellPopup.storyboard */; };
+		345EAAB02264A64A00ED4259 /* LunchCellPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */; };
 		34798EC42250CA14003A8510 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC32250CA14003A8510 /* FirebaseCore.framework */; };
 		34798ECA2250CA62003A8510 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC52250CA61003A8510 /* FirebaseInstanceID.framework */; };
 		34798ECB2250CA62003A8510 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC62250CA61003A8510 /* GoogleAppMeasurement.framework */; };
@@ -55,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		345EAAAD226472EA00ED4259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Lunch Mama/Base.lproj/LunchCellPopup.storyboard"; sourceTree = "<group>"; };
+		345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCellPopupViewController.swift; sourceTree = "<group>"; };
 		34798EC32250CA14003A8510 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
 		34798EC52250CA61003A8510 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		34798EC62250CA61003A8510 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppMeasurement.framework; sourceTree = "<group>"; };
@@ -214,8 +218,10 @@
 			children = (
 				73D59A2C224D1871002CCBCC /* AppDelegate.swift */,
 				73D59A30224D1871002CCBCC /* Main.storyboard */,
+				345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */,
 				34798EEF2253ACCE003A8510 /* LunchViewController.swift */,
 				34FDCE662256721500D79FDC /* LunchViewCollectionCell.swift */,
+				345EAAAC226472EA00ED4259 /* LunchCellPopup.storyboard */,
 				34798EEB2253A6ED003A8510 /* ViewController.swift */,
 				73D59A33224D1872002CCBCC /* Assets.xcassets */,
 				73D59A35224D1872002CCBCC /* LaunchScreen.storyboard */,
@@ -290,6 +296,7 @@
 				73D12542225120ED00D8D732 /* gRPCCertificates.bundle in Resources */,
 				73D59A37224D1872002CCBCC /* LaunchScreen.storyboard in Resources */,
 				738EE467224E30C8006E03FD /* GoogleService-Info.plist in Resources */,
+				345EAAAE226472EA00ED4259 /* LunchCellPopup.storyboard in Resources */,
 				73D59A34224D1872002CCBCC /* Assets.xcassets in Resources */,
 				73D59A32224D1871002CCBCC /* Main.storyboard in Resources */,
 			);
@@ -304,6 +311,7 @@
 			files = (
 				34798EEC2253A6ED003A8510 /* ViewController.swift in Sources */,
 				73D59A41224D3C5C002CCBCC /* tabBarViewController.swift in Sources */,
+				345EAAB02264A64A00ED4259 /* LunchCellPopupViewController.swift in Sources */,
 				738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */,
 				34FDCE672256721500D79FDC /* LunchViewCollectionCell.swift in Sources */,
 				34798EF02253ACCE003A8510 /* LunchViewController.swift in Sources */,
@@ -315,6 +323,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		345EAAAC226472EA00ED4259 /* LunchCellPopup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345EAAAD226472EA00ED4259 /* Base */,
+			);
+			name = LunchCellPopup.storyboard;
+			sourceTree = "<group>";
+		};
 		73D59A30224D1871002CCBCC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
