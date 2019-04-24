@@ -201,76 +201,83 @@
             </objects>
             <point key="canvasLocation" x="174" y="689"/>
         </scene>
-        <!--午餐记录-->
-        <scene sceneID="dbV-M0-sdW">
+        <!--Lunch Records-->
+        <scene sceneID="Ewn-gn-FTl">
             <objects>
-                <viewController id="dKZ-KC-BOj" customClass="LunchViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qNO-M4-PzX">
+                <collectionViewController id="hIu-9p-Iov" customClass="LunchViewController" customModule="Lunch_Mama" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="kYB-Oy-M7l">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-PU-Ebl">
-                                <rect key="frame" x="53" y="76" width="666" height="746"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dfe-yQ-fUF">
-                                    <size key="itemSize" width="154" height="163"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="QmI-bf-SVB" customClass="LunchViewCollectionCellCollectionViewCell" customModule="Lunch_Mama" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="154" height="163"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="154" height="163"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jv-ct-ERY">
-                                                    <rect key="frame" x="35" y="79" width="84" height="84"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Edit"/>
-                                                    <connections>
-                                                        <action selector="Edit_Lunch_Comsumption:" destination="QmI-bf-SVB" eventType="touchUpInside" id="RXW-Bb-Msk"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lunch Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-xb-KCv">
-                                                    <rect key="frame" x="8" y="38" width="138" height="54"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfE-BY-Bnt">
-                                                    <rect key="frame" x="6" y="9" width="143" height="32"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </view>
-                                        <connections>
-                                            <outlet property="lunch_status_label" destination="dfc-xb-KCv" id="xG9-9d-b4O"/>
-                                            <outlet property="my_label" destination="wfE-BY-Bnt" id="kEZ-2f-VWA"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="dKZ-KC-BOj" id="Ir6-Un-r9K"/>
-                                    <outlet property="delegate" destination="dKZ-KC-BOj" id="fEL-Sg-58s"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="tt8-39-4Yq"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="午餐记录" id="xo5-be-WrB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h7s-kO-JFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lJP-2t-iBi">
+                            <size key="itemSize" width="158" height="160"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="QmI-bf-SVB" customClass="LunchViewCollectionCellCollectionViewCell" customModule="Lunch_Mama" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="158" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="158" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jv-ct-ERY">
+                                            <rect key="frame" x="35" y="79" width="84" height="84"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Edit"/>
+                                            <connections>
+                                                <action selector="Edit_Lunch_Comsumption:" destination="QmI-bf-SVB" eventType="touchUpInside" id="RXW-Bb-Msk"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lunch Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-xb-KCv">
+                                            <rect key="frame" x="8" y="38" width="138" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfE-BY-Bnt">
+                                            <rect key="frame" x="6" y="9" width="143" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="lunch_status_label" destination="dfc-xb-KCv" id="xG9-9d-b4O"/>
+                                    <outlet property="my_label" destination="wfE-BY-Bnt" id="kEZ-2f-VWA"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="LunchViewFooter" id="ex3-2R-IiO" customClass="LunchViewFooter" customModule="Lunch_Mama" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="160" width="768" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJA-ja-SCa">
+                                    <rect key="frame" x="293" y="10" width="183" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Submit today's new record"/>
+                                    <connections>
+                                        <action selector="submit_new_record:" destination="ex3-2R-IiO" eventType="touchUpInside" id="8vP-S0-g9q"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="hIu-9p-Iov" id="DNz-k6-Q07"/>
+                            <outlet property="delegate" destination="hIu-9p-Iov" id="igN-hJ-djI"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Lunch Records" id="x9z-Fa-NZZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZn-j9-mxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172.65625" y="1370.5078125"/>
+            <point key="canvasLocation" x="172.65625" y="1404.4921875"/>
         </scene>
         <!--最新消息-->
         <scene sceneID="gz9-eA-RHN">
@@ -327,7 +334,7 @@
                         <segue destination="cO2-gq-2te" kind="relationship" relationship="viewControllers" id="Rpp-6A-bST"/>
                         <segue destination="2WY-Lk-5ZW" kind="relationship" relationship="viewControllers" id="k3t-Ij-68d"/>
                         <segue destination="qon-Hf-hkr" kind="relationship" relationship="viewControllers" id="nB0-wE-JNe"/>
-                        <segue destination="dKZ-KC-BOj" kind="relationship" relationship="viewControllers" id="zwb-5S-2vh"/>
+                        <segue destination="hIu-9p-Iov" kind="relationship" relationship="viewControllers" id="Oge-kO-lfs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1z-gJ-0Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>

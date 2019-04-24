@@ -11,6 +11,7 @@ import FirebaseFirestore
 
 class ViewController: UIViewController {
     var db: Firestore!
+    var user_role = 0  // staff(teacher)
     
     @IBOutlet weak var loginID: UITextField!
     @IBOutlet weak var loginPW: UITextField!
@@ -30,15 +31,19 @@ class ViewController: UIViewController {
         switch sender.selectedSegmentIndex {
         case 0: //student
             currentLoginRoleIcon.image = UIImage(named: "loginstudent")
+            self.user_role = 0
             break
         case 1: //staff
             currentLoginRoleIcon.image = UIImage(named: "loginteacher")
+            self.user_role = 1
             break
         case 2: //admin
             currentLoginRoleIcon.image = UIImage(named: "loginadmin")
+            self.user_role = 2
             break
         default:
             currentLoginRoleIcon.image = UIImage(named: "loginpic")
+            self.user_role = 0
             break
         }
     }
@@ -79,7 +84,9 @@ class ViewController: UIViewController {
                 // add newly signup users into the database
                 self.db.collection("user_infos").document(authResult!.user.uid).setData([
                     "name": authResult!.user.email!,
-                    "email": authResult!.user.email!
+                    "email": authResult!.user.email!,
+                    "user_role": self.user_role,
+                    "Class": "testing class"
                     //...
                 ]){ err in
                     if let err = err {

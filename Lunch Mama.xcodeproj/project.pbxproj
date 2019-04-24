@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3441BF3B226F7D4700A0A706 /* LunchViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441BF3A226F7D4700A0A706 /* LunchViewFooter.swift */; };
 		345EAAAE226472EA00ED4259 /* LunchCellPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345EAAAC226472EA00ED4259 /* LunchCellPopup.storyboard */; };
 		345EAAB02264A64A00ED4259 /* LunchCellPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */; };
 		34798EC42250CA14003A8510 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC32250CA14003A8510 /* FirebaseCore.framework */; };
@@ -57,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3441BF3A226F7D4700A0A706 /* LunchViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewFooter.swift; sourceTree = "<group>"; };
 		345EAAAD226472EA00ED4259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Lunch Mama/Base.lproj/LunchCellPopup.storyboard"; sourceTree = "<group>"; };
 		345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchCellPopupViewController.swift; sourceTree = "<group>"; };
 		34798EC32250CA14003A8510 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				73D59A2C224D1871002CCBCC /* AppDelegate.swift */,
 				73D59A30224D1871002CCBCC /* Main.storyboard */,
 				345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */,
+				3441BF3A226F7D4700A0A706 /* LunchViewFooter.swift */,
 				34798EEF2253ACCE003A8510 /* LunchViewController.swift */,
 				34FDCE662256721500D79FDC /* LunchViewCollectionCell.swift */,
 				345EAAAC226472EA00ED4259 /* LunchCellPopup.storyboard */,
@@ -317,6 +320,7 @@
 				34798EF02253ACCE003A8510 /* LunchViewController.swift in Sources */,
 				7328DC8D224FA6BF000D31EF /* profileViewController.swift in Sources */,
 				73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */,
+				3441BF3B226F7D4700A0A706 /* LunchViewFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
