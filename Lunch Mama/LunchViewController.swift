@@ -23,7 +23,7 @@ class LunchViewController: UICollectionViewController {
     let cell_reuseIdentifier = "cell"
     let footer_reuseIdentifier = "LunchViewFooter"
     var db: Firestore!
-//    var student_ids = ["1", "2", "3"]
+    var image_names = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]
 //    var student_lunch_consumptions = ["just right", "just right", "just right"]
     var student_record_array = [StudentRecord]()
     
@@ -53,7 +53,7 @@ class LunchViewController: UICollectionViewController {
             for a_record in self.student_record_array {
                 self.db.collection("records").addDocument(data:[
                     "Class":"testing class",
-                    "data": Timestamp(),
+                    "date": Timestamp(),
                     "food_consumption":a_record.lunch_status ?? "input error",
                     "student_email":a_record.student_email ?? "input error"
                 ] ){ err in
@@ -88,7 +88,8 @@ class LunchViewController: UICollectionViewController {
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.my_label.text = self.student_record_array[indexPath.item].student_email
         cell.lunch_status_label.text = self.student_record_array[indexPath.item].lunch_status
-        cell.backgroundColor = UIColor.gray // make cell more visible in our example project
+//        cell.backgroundColor = UIColor.gray // make cell more visible in our example project
+        cell.Icon_area.image = UIImage(named: image_names[indexPath.item])
         
         return cell
     }

@@ -63,8 +63,13 @@ class latestNewsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: nil)
         cell.textLabel?.text = newsArray[indexPath.row].title
+        cell.imageView?.image = UIImage(named: "03")
+        cell.detailTextLabel?.text = newsArray[indexPath.row].content
+        cell.textLabel?.font = UIFont(name: "System", size: 20)
+        cell.detailTextLabel?.font = UIFont(name: "System", size: 16)
+        cell.detailTextLabel?.numberOfLines = 0
         return cell
     }
     

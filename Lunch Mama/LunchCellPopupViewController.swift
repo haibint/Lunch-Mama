@@ -20,6 +20,10 @@ class LunchCellPopupViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func option1_clicked(_ sender: Any) {
         self.student_lunch_status = "1/4 Food Left"
         dismiss(animated: true)

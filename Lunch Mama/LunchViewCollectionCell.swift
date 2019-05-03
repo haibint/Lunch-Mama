@@ -12,6 +12,8 @@ class LunchViewCollectionCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var my_label: UILabel!
     @IBOutlet weak var lunch_status_label: UILabel!
     
+    @IBOutlet weak var Icon_area: UIImageView!
+    
     @IBAction func Edit_Lunch_Comsumption(_ sender: UIButton) {
         print("mylog: Edit Btton pressed.")
         let sb = UIStoryboard(name: "LunchCellPopup", bundle: nil)

@@ -39,7 +39,7 @@ class profileViewController: UIViewController {
         doc_ref.getDocument { (document, error) in
             guard let document = document, document.exists else { return }
             let name = document.data()?["name"] as? String
-            self.user_name_label.text = name
+            self.user_name_label.text = "Hi, \(name ?? "this is your profile")"
         }
         // Do any additional setup after loading the view.
     }

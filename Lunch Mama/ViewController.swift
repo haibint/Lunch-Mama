@@ -30,19 +30,19 @@ class ViewController: UIViewController {
     @IBAction func loginRoleControl(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0: //student
-            currentLoginRoleIcon.image = UIImage(named: "loginstudent")
+            currentLoginRoleIcon.image = UIImage(named: "20")
             self.user_role = 0
             break
         case 1: //staff
-            currentLoginRoleIcon.image = UIImage(named: "loginteacher")
+            currentLoginRoleIcon.image = UIImage(named: "18")
             self.user_role = 1
             break
         case 2: //admin
-            currentLoginRoleIcon.image = UIImage(named: "loginadmin")
+            currentLoginRoleIcon.image = UIImage(named: "17")
             self.user_role = 2
             break
         default:
-            currentLoginRoleIcon.image = UIImage(named: "loginpic")
+            currentLoginRoleIcon.image = UIImage(named: "11")
             self.user_role = 0
             break
         }
