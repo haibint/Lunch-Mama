@@ -79,17 +79,36 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-G5-l7Q">
-                                                <rect key="frame" x="117" y="129.5" width="180" height="60"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="180" id="QeO-Z6-J2y"/>
-                                                    <constraint firstAttribute="height" constant="60" id="ejN-o9-m9x"/>
-                                                </constraints>
-                                                <state key="normal" title="More Food!" image="button_05"/>
-                                                <connections>
-                                                    <action selector="option5_clicked:" destination="gHw-iy-0VQ" eventType="touchUpInside" id="sRh-6a-eRs"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Xg5-si-7pq">
+                                                <rect key="frame" x="12" y="129.5" width="390" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KV-G5-l7Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="180" id="QeO-Z6-J2y"/>
+                                                            <constraint firstAttribute="height" constant="60" id="ejN-o9-m9x"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                        <state key="normal" title="Just Right👍🏼">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="to_just_right:" destination="gHw-iy-0VQ" eventType="touchUpInside" id="Czr-98-93N"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpN-fd-vbO">
+                                                        <rect key="frame" x="210" y="0.0" width="180" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="0ba-d1-qmv"/>
+                                                            <constraint firstAttribute="width" constant="180" id="Tyg-VX-tCx"/>
+                                                        </constraints>
+                                                        <state key="normal" title="More Food!" image="button_05"/>
+                                                        <connections>
+                                                            <action selector="option5_clicked:" destination="gHw-iy-0VQ" eventType="touchUpInside" id="lrH-On-SxO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMs-41-vKp">

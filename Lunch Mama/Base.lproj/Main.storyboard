@@ -167,7 +167,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="save_food" translatesAutoresizingMaskIntoConstraints="NO" id="9w8-r7-3Lb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="9w8-r7-3Lb">
                                 <rect key="frame" x="124" y="301" width="502" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -413,9 +413,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="22" width="597" height="600"/>
         <image name="Level 1" width="1668" height="2226"/>
         <image name="about_us" width="392" height="643"/>
         <image name="loginpic" width="264" height="270"/>
-        <image name="save_food" width="292" height="285"/>
     </resources>
 </document>

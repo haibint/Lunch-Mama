@@ -6,9 +6,11 @@
 - current problem: firestore network not available in China, but Fire Auth seems to work.
 
 ## Features to be added (by priority)
-1. checked: Display Lunch view with firestore query of all students in a testing class
-2. Make some fake news on the front page
-3. Make a static about us page
+0. Website for agregate data.
+1. :) Display Lunch view with firestore query of all students in a testing class
+2. :) Make some news on the front page
+3. :) Make a static about us page
 4. profile page add an icon placeholder
 5. restrict students access to lunch view
-6. replace lunchview cell with an image and make it look nicer
+6. :) replace lunchview cell with an image and make it look nicer
+7. class properties for teachers and students

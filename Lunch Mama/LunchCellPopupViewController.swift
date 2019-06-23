@@ -55,6 +55,11 @@ class LunchCellPopupViewController: UIViewController {
     }
     
     
+    @IBAction func to_just_right(_ sender: Any) {
+        self.student_lunch_status = "just right"
+        dismiss(animated: true)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "food_change"), object: self)
+    }
     /*
     // MARK: - Navigation
 
