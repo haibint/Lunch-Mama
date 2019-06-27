@@ -11,7 +11,7 @@ import FirebaseFirestore
 
 class ViewController: UIViewController {
     var db: Firestore!
-    var user_role = 0  // staff(teacher)
+    var user_role = 1  // staff(teacher)
     
     @IBOutlet weak var loginID: UITextField!
     @IBOutlet weak var loginPW: UITextField!
@@ -102,10 +102,10 @@ class ViewController: UIViewController {
     //submib login info
     @IBAction func loginSubmitted(_ sender: UIButton) {
         //switch back to login view
-        if isSigningUp {
-            loginSignupSwitchTo(status: "login")
-            return
-        }
+//        if isSigningUp {
+//            loginSignupSwitchTo(status: "login")
+//            return
+//        }
         //resign first responder while submit
         self.loginID.resignFirstResponder()
         self.loginPW.resignFirstResponder()
