@@ -10,45 +10,29 @@
 		3441BF3B226F7D4700A0A706 /* LunchViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441BF3A226F7D4700A0A706 /* LunchViewFooter.swift */; };
 		345EAAAE226472EA00ED4259 /* LunchCellPopup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345EAAAC226472EA00ED4259 /* LunchCellPopup.storyboard */; };
 		345EAAB02264A64A00ED4259 /* LunchCellPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345EAAAF2264A64A00ED4259 /* LunchCellPopupViewController.swift */; };
-		34798EC42250CA14003A8510 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC32250CA14003A8510 /* FirebaseCore.framework */; };
-		34798ECA2250CA62003A8510 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC52250CA61003A8510 /* FirebaseInstanceID.framework */; };
-		34798ECB2250CA62003A8510 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC62250CA61003A8510 /* GoogleAppMeasurement.framework */; };
 		34798ECC2250CA62003A8510 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC72250CA61003A8510 /* GoogleUtilities.framework */; };
-		34798ECD2250CA62003A8510 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC82250CA61003A8510 /* nanopb.framework */; };
 		34798ECE2250CA62003A8510 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EC92250CA62003A8510 /* FirebaseAnalytics.framework */; };
-		34798ED12250CA8A003A8510 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ECF2250CA89003A8510 /* FirebaseAuth.framework */; };
 		34798ED22250CA8A003A8510 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED02250CA8A003A8510 /* GTMSessionFetcher.framework */; };
-		34798ED92250CAB7003A8510 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED32250CAB5003A8510 /* Protobuf.framework */; };
-		34798EDA2250CAB7003A8510 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED42250CAB5003A8510 /* gRPC-C++.framework */; };
 		34798EDB2250CAB7003A8510 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED52250CAB6003A8510 /* FirebaseFirestore.framework */; };
 		34798EDC2250CAB7003A8510 /* BoringSSL-GRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED62250CAB6003A8510 /* BoringSSL-GRPC.framework */; };
 		34798EDD2250CAB7003A8510 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED72250CAB6003A8510 /* gRPC-Core.framework */; };
-		34798EDE2250CAB7003A8510 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798ED82250CAB7003A8510 /* leveldb-library.framework */; };
 		34798EE42250CE8C003A8510 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EE32250CE8C003A8510 /* FIRAnalyticsConnector.framework */; };
-		34798EE62250CEA1003A8510 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34798EE52250CEA1003A8510 /* FirebaseCoreDiagnostics.framework */; };
 		34798EEC2253A6ED003A8510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34798EEB2253A6ED003A8510 /* ViewController.swift */; };
 		34798EF02253ACCE003A8510 /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34798EEF2253ACCE003A8510 /* LunchViewController.swift */; };
 		34FDCE672256721500D79FDC /* LunchViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FDCE662256721500D79FDC /* LunchViewCollectionCell.swift */; };
 		7328DC8D224FA6BF000D31EF /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7328DC8C224FA6BF000D31EF /* profileViewController.swift */; };
 		73837F04224E6CF400D19082 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 73837F03224E6CF400D19082 /* .gitignore */; };
 		738590F922509E240013E0F0 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F222509E220013E0F0 /* gRPC-C++.framework */; };
-		738590FB22509E240013E0F0 /* BoringSSL-GRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F422509E220013E0F0 /* BoringSSL-GRPC.framework */; };
 		738590FC22509E240013E0F0 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F522509E230013E0F0 /* Protobuf.framework */; };
-		738590FD22509E240013E0F0 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F622509E230013E0F0 /* FirebaseFirestore.framework */; };
-		738590FE22509E240013E0F0 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F722509E230013E0F0 /* gRPC-Core.framework */; };
 		738590FF22509E240013E0F0 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738590F822509E240013E0F0 /* leveldb-library.framework */; };
 		738EE465224E2520006E03FD /* latestNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EE464224E2520006E03FD /* latestNewsViewController.swift */; };
 		738EE467224E30C8006E03FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 738EE466224E30C8006E03FD /* GoogleService-Info.plist */; };
 		738EE480224E5C41006E03FD /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE478224E5C3F006E03FD /* nanopb.framework */; };
 		738EE481224E5C41006E03FD /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE479224E5C3F006E03FD /* FirebaseCore.framework */; };
-		738EE482224E5C41006E03FD /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE47A224E5C3F006E03FD /* FIRAnalyticsConnector.framework */; };
 		738EE483224E5C41006E03FD /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE47B224E5C40006E03FD /* GoogleAppMeasurement.framework */; };
-		738EE484224E5C41006E03FD /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE47C224E5C40006E03FD /* FirebaseAnalytics.framework */; };
 		738EE485224E5C41006E03FD /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE47D224E5C41006E03FD /* FirebaseInstanceID.framework */; };
-		738EE486224E5C41006E03FD /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE47E224E5C41006E03FD /* GoogleUtilities.framework */; };
 		738EE487224E5C41006E03FD /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE47F224E5C41006E03FD /* FirebaseCoreDiagnostics.framework */; };
 		738EE48A224E5C8A006E03FD /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE488224E5C8A006E03FD /* FirebaseAuth.framework */; };
-		738EE48B224E5C8A006E03FD /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738EE489224E5C8A006E03FD /* GTMSessionFetcher.framework */; };
 		73D12542225120ED00D8D732 /* gRPCCertificates.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73D12541225120ED00D8D732 /* gRPCCertificates.bundle */; };
 		73D59A2D224D1871002CCBCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D59A2C224D1871002CCBCC /* AppDelegate.swift */; };
 		73D59A32224D1871002CCBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D59A30224D1871002CCBCC /* Main.storyboard */; };
@@ -81,6 +65,9 @@
 		34798EEA22531A56003A8510 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		34798EEB2253A6ED003A8510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34798EEF2253ACCE003A8510 /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
+		347EF0CB22C3A82400DE657B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		347EF0CC22C3A82400DE657B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "Lunch Mama/zh-Hant.lproj/LunchCellPopup.strings"; sourceTree = "<group>"; };
+		347EF0CD22C3A82400DE657B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		34FDCE662256721500D79FDC /* LunchViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewCollectionCell.swift; sourceTree = "<group>"; };
 		7328DC8C224FA6BF000D31EF /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		73837F03224E6CF400D19082 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -123,32 +110,16 @@
 				738EE485224E5C41006E03FD /* FirebaseInstanceID.framework in Frameworks */,
 				34798EDC2250CAB7003A8510 /* BoringSSL-GRPC.framework in Frameworks */,
 				34798ED22250CA8A003A8510 /* GTMSessionFetcher.framework in Frameworks */,
-				738590FB22509E240013E0F0 /* BoringSSL-GRPC.framework in Frameworks */,
 				738590FF22509E240013E0F0 /* leveldb-library.framework in Frameworks */,
 				34798EE42250CE8C003A8510 /* FIRAnalyticsConnector.framework in Frameworks */,
-				738EE482224E5C41006E03FD /* FIRAnalyticsConnector.framework in Frameworks */,
-				738EE48B224E5C8A006E03FD /* GTMSessionFetcher.framework in Frameworks */,
 				34798ECE2250CA62003A8510 /* FirebaseAnalytics.framework in Frameworks */,
 				738EE483224E5C41006E03FD /* GoogleAppMeasurement.framework in Frameworks */,
 				738EE480224E5C41006E03FD /* nanopb.framework in Frameworks */,
-				34798ECD2250CA62003A8510 /* nanopb.framework in Frameworks */,
-				34798EC42250CA14003A8510 /* FirebaseCore.framework in Frameworks */,
 				34798EDB2250CAB7003A8510 /* FirebaseFirestore.framework in Frameworks */,
 				34798EDD2250CAB7003A8510 /* gRPC-Core.framework in Frameworks */,
-				34798ED12250CA8A003A8510 /* FirebaseAuth.framework in Frameworks */,
-				738590FD22509E240013E0F0 /* FirebaseFirestore.framework in Frameworks */,
-				34798EDA2250CAB7003A8510 /* gRPC-C++.framework in Frameworks */,
-				34798ECB2250CA62003A8510 /* GoogleAppMeasurement.framework in Frameworks */,
 				738EE487224E5C41006E03FD /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				34798ECA2250CA62003A8510 /* FirebaseInstanceID.framework in Frameworks */,
-				738590FE22509E240013E0F0 /* gRPC-Core.framework in Frameworks */,
 				738590FC22509E240013E0F0 /* Protobuf.framework in Frameworks */,
-				738EE484224E5C41006E03FD /* FirebaseAnalytics.framework in Frameworks */,
-				34798ED92250CAB7003A8510 /* Protobuf.framework in Frameworks */,
 				34798ECC2250CA62003A8510 /* GoogleUtilities.framework in Frameworks */,
-				34798EE62250CEA1003A8510 /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				738EE486224E5C41006E03FD /* GoogleUtilities.framework in Frameworks */,
-				34798EDE2250CAB7003A8510 /* leveldb-library.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +235,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = binaryyard;
 				TargetAttributes = {
 					73D59A28224D1871002CCBCC = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -279,6 +251,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 73D59A20224D1871002CCBCC;
 			productRefGroup = 73D59A2A224D1871002CCBCC /* Products */;
@@ -331,6 +304,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				345EAAAD226472EA00ED4259 /* Base */,
+				347EF0CC22C3A82400DE657B /* zh-Hant */,
 			);
 			name = LunchCellPopup.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +313,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				73D59A31224D1871002CCBCC /* Base */,
+				347EF0CB22C3A82400DE657B /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -347,6 +322,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				73D59A36224D1872002CCBCC /* Base */,
+				347EF0CD22C3A82400DE657B /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -358,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -389,6 +366,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7M4RQ3674M;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -405,12 +383,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -418,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -449,6 +429,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7M4RQ3674M;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -459,11 +440,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -472,9 +454,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7M4RQ3674M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -486,10 +469,10 @@
 				);
 				NEW_SETTING = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.binaryyard.Lunch-Mama";
+				PRODUCT_BUNDLE_IDENTIFIER = com.binaryyard.lunchmama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Frameworks";
 			};
@@ -499,9 +482,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7M4RQ3674M;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -513,10 +497,10 @@
 				);
 				NEW_SETTING = "";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.binaryyard.Lunch-Mama";
+				PRODUCT_BUNDLE_IDENTIFIER = com.binaryyard.lunchmama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Frameworks";
 			};

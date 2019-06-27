@@ -1,0 +1,75 @@
+
+/* Class = "UIButton"; normalTitle = "登入"; ObjectID = "3zc-Hj-c9t"; */
+"3zc-Hj-c9t.normalTitle" = "登入";
+
+/* Class = "UIButton"; normalTitle = "Edit"; ObjectID = "8jv-ct-ERY"; */
+"8jv-ct-ERY.normalTitle" = "Edit";
+
+/* Class = "UIButton"; normalTitle = "提交註冊"; ObjectID = "GGX-QI-0oX"; */
+"GGX-QI-0oX.normalTitle" = "提交註冊";
+
+/* Class = "UITabBarItem"; title = "帳戶"; ObjectID = "GpT-Vi-StY"; */
+"GpT-Vi-StY.title" = "帳戶";
+
+/* Class = "UILabel"; text = "聯絡我們："; ObjectID = "Gtp-n2-JrF"; */
+"Gtp-n2-JrF.text" = "聯絡我們：";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "H2f-yj-TAI"; */
+"H2f-yj-TAI.text" = "Label";
+
+/* Class = "UILabel"; text = "登入戶口"; ObjectID = "ICi-Ih-ZdX"; */
+"ICi-Ih-ZdX.text" = "登入戶口";
+
+/* Class = "UILabel"; text = "schoollunchmama@gmail.com\n"; ObjectID = "RPL-Du-wwR"; */
+"RPL-Du-wwR.text" = "schoollunchmama@gmail.com\n";
+
+/* Class = "UITabBarItem"; title = "最新消息"; ObjectID = "S5p-WM-ibP"; */
+"S5p-WM-ibP.title" = "最新消息";
+
+/* Class = "UILabel"; text = "網址："; ObjectID = "WVm-cz-Dyi"; */
+"WVm-cz-Dyi.text" = "網址：";
+
+/* Class = "UILabel"; text = "電郵："; ObjectID = "XPG-e1-Ogf"; */
+"XPG-e1-Ogf.text" = "電郵：";
+
+/* Class = "UILabel"; text = "密碼"; ObjectID = "aIM-zG-Q8y"; */
+"aIM-zG-Q8y.text" = "密碼";
+
+/* Class = "UILabel"; text = "關於我們"; ObjectID = "cV2-Ab-49g"; */
+"cV2-Ab-49g.text" = "關於我們";
+
+/* Class = "UILabel"; text = "最新消息"; ObjectID = "dEr-uW-Iv2"; */
+"dEr-uW-Iv2.text" = "最新消息";
+
+/* Class = "UILabel"; text = "Lunch Status"; ObjectID = "dfc-xb-KCv"; */
+"dfc-xb-KCv.text" = "Lunch Status";
+
+/* Class = "UITabBarItem"; title = "關於我們"; ObjectID = "esS-8E-HNa"; */
+"esS-8E-HNa.title" = "關於我們";
+
+/* Class = "UITabBarController"; title = "tabBarController"; ObjectID = "fvt-x6-B43"; */
+"fvt-x6-B43.title" = "tabBarController";
+
+/* Class = "UIButton"; normalTitle = "Submit today's new record"; ObjectID = "iJA-ja-SCa"; */
+"iJA-ja-SCa.normalTitle" = "Submit today's new record";
+
+/* Class = "UIButton"; normalTitle = "忘記密碼"; ObjectID = "pGN-B1-skh"; */
+"pGN-B1-skh.normalTitle" = "忘記密碼";
+
+/* Class = "UIButton"; normalTitle = "登出"; ObjectID = "pSb-WJ-y0Z"; */
+"pSb-WJ-y0Z.normalTitle" = "登出";
+
+/* Class = "UISegmentedControl"; roI-3O-gxc.segmentTitles[0] = "學生登入"; ObjectID = "roI-3O-gxc"; */
+"roI-3O-gxc.segmentTitles[0]" = "學生登入";
+
+/* Class = "UISegmentedControl"; roI-3O-gxc.segmentTitles[1] = "教師登入"; ObjectID = "roI-3O-gxc"; */
+"roI-3O-gxc.segmentTitles[1]" = "教師登入";
+
+/* Class = "UILabel"; text = "Student Name"; ObjectID = "wfE-BY-Bnt"; */
+"wfE-BY-Bnt.text" = "Student Name";
+
+/* Class = "UITabBarItem"; title = "Lunch Records"; ObjectID = "x9z-Fa-NZZ"; */
+"x9z-Fa-NZZ.title" = "Lunch Records";
+
+/* Class = "UILabel"; text = "https://www.collaction.hk/s/school_lunch_mama/"; ObjectID = "yQ8-7e-Mba"; */
+"yQ8-7e-Mba.text" = "https://www.collaction.hk/s/school_lunch_mama/";
